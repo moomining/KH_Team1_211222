@@ -3,4 +3,4 @@
 
 Welcome
 
-/* Study Ruels */
+/* Study Rules */
