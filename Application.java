@@ -1,26 +1,21 @@
-package com.greedy.level01.basic;
+package com.greedy.level02.normal;
 
 public class Application {
 
 	public static void main(String[] args) {
-		
-		Calculator calc = new Calculator();
-		calc.checkMethod();
-		
-		System.out.println("1부터 10까지의 합 : "+calc.sum1to10());
-		
-		int number1 = 10;
+		RandomMaker rm = new RandomMaker();
+		int number1 = -20;
 		int number2 = 20;
 		
-		System.out.print("두 수 중 큰 수는 ");
+		System.out.println(rm.randomNumber(number1, number2));
 		
-		calc.checkMaxNumber(number1, number2);
-		System.out.println("이다.");
+		char ch1 = 'A';
+		char ch2 = 'Z';
 		
+		int number3 = 10;
 		
-		System.out.println("10과 20의 합은 : "+calc.sumTwoNumber(number1, number2));
-
-		System.out.println("10과 5의 차는 : "+calc.minusTwoNumber(10, 5));
+		System.out.println(rm.rockPaperScissors());
+		System.out.println(rm.tossCoin());
 		
 	}
 
