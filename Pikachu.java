@@ -33,10 +33,10 @@ public class Pikachu extends PokemonDTO {
 				String yesOrNo = sc.nextLine();
 				label:
 				if(yesOrNo.equals("y")) {
-					System.out.println("[system] : 피카츄(이)가 라이츄로 진화했습니다. 축하드립니다.");
+					System.out.println("[system] : 피카츄(이)가 라이츄(으)로 진화했습니다. 축하드립니다.");
 					return;
 				} else if (yesOrNo.equals("n")) {
-					System.out.println("[system] : 진화를 못해 화가난 피카츄가 집을 나갔습니다ㅠㅠ. 게임을 종료합니다.");
+					System.out.println("[system] : 진화를 못해 화가 난 피카츄(이)가 집을 나갔습니다ㅠㅠ. 게임을 종료합니다.");
 					return;
 				} else {
 					System.out.println("[system] : y/n 중 하나만을 입력해야합니다. 다시 입력해주세요.");
