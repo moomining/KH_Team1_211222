@@ -44,7 +44,7 @@ public class Pairi extends PokemonDTO {
 				
 			}
 		} else { 
-			System.out.println("[system] : 충전이 필요합니다. 충전을 시행합니다.");
+			System.out.println("[system] : 충전이 필요합니다. 충전을 시작합니다.");
 			recharge();
 		}
 	}
