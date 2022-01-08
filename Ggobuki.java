@@ -24,7 +24,6 @@ public class Ggobuki extends PokemonDTO {
 	@Override
 	public void attack() {
 		
-		System.out.println("꼬부기에게 부여된 미션 회수는 " + mission +"회입니다." );
 			if (HP >= 50) { 
 				System.out.println("꼬부기가 물을 뿜습니다. 뿌우우==33");
 				HP -= 30;
