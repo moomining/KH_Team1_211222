@@ -40,7 +40,7 @@ public class Ggobuki extends PokemonDTO {
 						System.out.println("꼬부기가 어니부기로 진화했습니다. 축하드립니다.");
 						return;
 					} else if (yesOrNo.equals("n")) {
-						System.out.println("프로그램을 종료합니다.");
+						System.out.println("진화를 못해 화가난 꼬북이는 해적이 되었습니다. 게임을 종료합니다.");
 						return;
 					} else {
 						System.out.println("y/n 중 하나만을 입력해야합니다. 다시 입력해주세요.");
@@ -49,7 +49,7 @@ public class Ggobuki extends PokemonDTO {
 					
 				}
 			} else { 
-				System.out.println("충전이 필요합니다. 충전을 시행합니다.");
+				System.out.println("꼬북이의 hp가 모자라 공격이 불가합니다. 충전을 진행하세요!");
 				recharge();
 			}
 		
