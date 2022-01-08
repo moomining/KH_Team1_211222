@@ -8,7 +8,7 @@ public class Pairi extends PokemonDTO {
 	public void recharge() {
 		// TODO Auto-generated method stub
 		if(this.HP < 100) {
-			System.out.println("[system] : 파이리의 HP가 100% 충전되었습니다.");
+			System.out.println("[system] : 파이리가 불을 충전합니다. 파이리의 HP가 100% 충전되었습니다.");
 			this.HP = 100;
 		} else {
 			System.out.println("[system] : 파이리의 HP가 완충되어 있습니다. 공격을 진행해주세요.");
@@ -20,7 +20,7 @@ public class Pairi extends PokemonDTO {
 	public void attack() {
 		
 		if (HP >= 50) { 
-			System.out.println("[system] : 파이리(이)가 불을 뿜습니다. 화르륵==33");
+			System.out.println("[system] : 파이리(이)가 화염방사를 사용합니다! 파아아!!!!!");
 			HP -= 30;
 			count++;
 			System.out.println("[system] : 파이리(이)가 " + count+"회 공격을 수행했습니다.");
