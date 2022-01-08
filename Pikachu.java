@@ -20,7 +20,6 @@ public class Pikachu extends PokemonDTO {
 	@Override
 	public void attack() {
 		// TODO Auto-generated method stub
-		System.out.println("피카츄에게 부여된 미션 회수는 " + mission +"회입니다." );
 		if (HP >= 50) { 
 			System.out.println("피카츄가 전기를 쏩니다. 치지직===ZZ");
 			HP -= 30;
