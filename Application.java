@@ -17,13 +17,16 @@ public class Application {
 		case 1 : 
 			poke = "피카츄";
 			Pikachu pika = new Pikachu();
+			System.out.println("미션! " + pika.mission + "회 공격하여 " + poke +"를 진화시켜라.");
 			while (true) {
 				System.out.println(poke + "가 수행할 동작 고르기 : ");
 				System.out.print("1. 충전 / 2. 공격 / 9. 게임 종료 (번호 입력) : ");
 				int num = sc.nextInt();
 				switch (num) {
 					case 1 : pika.recharge(); break;
-					case 2 : pika.attack(); break;
+					case 2 : pika.attack(); 
+							
+							break;
 					case 9 : System.out.println("게임을 종료합니다."); return;
 					default : System.out.println("잘못 입력하셨습니다. 다시 1,2,9 중 하나의 번호를 입력해주세요."); break;
 					}
@@ -31,6 +34,7 @@ public class Application {
 		case 2 :
 			poke = "파이리";
 			Pairi pai = new Pairi();
+			System.out.println("미션! " + pai.mission + "회 공격하여 " + poke +"를 진화시켜라.");
 			while (true) {
 				System.out.println(poke + "가 수행할 동작 고르기 : ");
 				System.out.print("1. 충전 / 2. 공격 / 9. 게임 종료 (번호 입력) : ");
@@ -46,6 +50,7 @@ public class Application {
 		case 3 :
 			poke = "꼬부기";
 			Ggobuki ggobuk = new Ggobuki();
+			System.out.println("미션! " + ggobuk.mission + "회 공격하여 " + poke +"를 진화시켜라.");
 			while (true) {
 				System.out.println(poke + "가 수행할 동작 고르기 : ");
 				System.out.print("1. 충전 / 2. 공격 / 9. 게임 종료 (번호 입력) : ");
@@ -64,8 +69,5 @@ public class Application {
 		
 	}
 
-	public void menuSelect() {
-		
-		
-	}
+
 }
