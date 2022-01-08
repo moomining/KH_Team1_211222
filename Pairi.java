@@ -20,7 +20,7 @@ public class Pairi extends PokemonDTO {
 	public void attack() {
 		
 		if (HP >= 50) { 
-			System.out.println("[system] : 파이리(이)가 화염방사를 사용합니다! 파아아!!!!!");
+			System.out.println("[system] : 파이리가 불을 뿜습니다. 화르륵==33");
 			HP -= 30;
 			count++;
 			System.out.println("[system] : 파이리(이)가 " + count+"회 공격을 수행했습니다.");
