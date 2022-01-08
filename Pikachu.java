@@ -21,7 +21,7 @@ public class Pikachu extends PokemonDTO {
 	public void attack() {
 		// TODO Auto-generated method stub
 		if (HP >= 50) { 
-			System.out.println("[system] : 피카츄(이)가 10만 볼트를 사용합니다! 피~카츄!!!!!");
+			System.out.println("[system] : 피카츄(이)가 10만볼트를 쏩니다. 피이까===ZZ);
 			HP -= 30;
 			count++;
 			System.out.println("[system] : 피카츄(이)가 " + count+"회 공격을 수행했습니다.");
