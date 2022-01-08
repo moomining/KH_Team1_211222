@@ -8,7 +8,7 @@ public class Pikachu extends PokemonDTO {
 	public void recharge() {
 		// TODO Auto-generated method stub
 		if(this.HP < 100) {
-			System.out.println("피카츄의 HP가 100% 충전되었습니다.");
+			System.out.println("[system] : 피카츄의 HP가 100% 충전되었습니다.");
 			this.HP = 100;
 		} else {
 			System.out.println("피카츄의 HP가 완충되어 있습니다. 2를 눌러 공격을 진행해주세요.");
