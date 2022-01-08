@@ -29,20 +29,21 @@ public class Pikachu extends PokemonDTO {
 			
 			if (mission == count) {
 				Scanner sc = new Scanner(System.in);
-				System.out.print("[system] : 진화 미션 횟수를 모두 채우셨습니다. 진화를 진행하시겠습니까? (y/n) : ");
-				String yesOrNo = sc.nextLine();
-				label:
-				if(yesOrNo.equals("y")) {
-					System.out.println("[system] : 피카츄(이)가 라이츄(으)로 진화했습니다. 축하드립니다.");
-					return;
-				} else if (yesOrNo.equals("n")) {
-					System.out.println("[system] : 진화를 못해 화가 난 피카츄(이)가 집을 나갔습니다ㅠㅠ. 게임을 종료합니다.");
-					return;
-				} else {
-					System.out.println("[system] : y/n 중 하나만을 입력해야합니다. 다시 입력해주세요.");
-					break label;
-				}
+				while(true) {
+					System.out.print("진화 미션 회수를 모두 채우셨습니다. 진화를 진행하시겠습니까? (y/n) : ");
+					String yesOrNo = sc.nextLine();
+					
+					if(yesOrNo.equals("y")) {
+						System.out.println("피카츄가 라이츄로 진화했습니다. 축하드립니다.");
+						System.exit(0);
+					} else if (yesOrNo.equals("n")) {
+						System.out.println("프로그램을 종료합니다.");
+						System.exit(0);
+					} else {
+						System.out.println("y/n 중 하나만을 입력해야합니다. 다시 입력해주세요.");
+					}
 				
+				}
 			}
 		} else { 
 			System.out.println("[system] : 피카츄의 hp가 모자라 공격이 불가합니다. 충전을 진행하세요!");
