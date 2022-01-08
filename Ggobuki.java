@@ -25,10 +25,10 @@ public class Ggobuki extends PokemonDTO {
 	public void attack() {
 		
 			if (HP >= 50) { 
-				System.out.println("[system] : 꼬부기(이)가 물을 뿜습니다. 뿌우우==33");
+				System.out.println("[system] : 꼬부기가 물을 뿜습니다. 뿌우우==33");
 				HP -= 30;
 				count++;
-				System.out.println("[system] : 꼬부기(이)가 " + count+"회 공격을 시행했습니다.");
+				System.out.println("[system] : 꼬부기가 " + count+"회 공격을 시행했습니다.");
 				System.out.println("[system] : 꼬부기의 현재 HP는 " + HP + "입니다." );
 				
 				if (mission == count) {
@@ -37,10 +37,10 @@ public class Ggobuki extends PokemonDTO {
 					String yesOrNo = sc.nextLine();
 					label:
 					if(yesOrNo.equals("y")) {
-						System.out.println("[system] : 꼬부기(이)가 어니부기(으)로 진화했습니다. 축하드립니다.");
+						System.out.println("[system] : 꼬부기가 어니부기로 진화했습니다. 축하드립니다.");
 						return;
 					} else if (yesOrNo.equals("n")) {
-						System.out.println("[system] : 진화를 못해 화가난 꼬부기(이)가 해적이 되었습니다. 게임을 종료합니다.");
+						System.out.println("[system] : 진화를 못해 화가난 꼬부기가 해적이 되었습니다. 게임을 종료합니다.");
 						return;
 					} else {
 						System.out.println("[system] : y/n 중 하나만을 입력해야합니다. 다시 입력해주세요.");
