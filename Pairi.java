@@ -28,7 +28,7 @@ public class Pairi extends PokemonDTO {
 			
 			if (mission == count) {
 				Scanner sc = new Scanner(System.in);
-				System.out.print("[system] : 진화 미션 회수를 모두 채우셨습니다. 진화를 진행하시겠습니까? (y/n) : ");
+				System.out.print("[system] : 진화 미션 횟수를 모두 채우셨습니다. 진화를 진행하시겠습니까? (y/n) : ");
 				String yesOrNo = sc.nextLine();
 				label:
 				if(yesOrNo.equals("y")) {
