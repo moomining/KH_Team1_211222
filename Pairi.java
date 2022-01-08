@@ -35,7 +35,7 @@ public class Pairi extends PokemonDTO {
 					System.out.println("[system] : 파이리(이)가 리자몽으로 진화했습니다. 축하드립니다.");
 					return;
 				} else if (yesOrNo.equals("n")) {
-					System.out.println("[system] : 프로그램을 종료합니다.");
+					System.out.println("[system] : 진화를 못해 화가난 파이리가 다 불태워 게임이 종료됩니다.");
 					return;
 				} else {
 					System.out.println("[system] : y/n 중 하나만을 입력해야합니다. 다시 입력해주세요.");
@@ -44,7 +44,7 @@ public class Pairi extends PokemonDTO {
 				
 			}
 		} else { 
-			System.out.println("[system] : 충전이 필요합니다. 충전을 시작합니다.");
+			System.out.println("[system] : 파이리의 hp가 모자라 공격이 불가합니다. 충전을 진행하세요!");
 			recharge();
 		}
 	}
