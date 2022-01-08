@@ -18,7 +18,7 @@ public class Pairi extends PokemonDTO {
 
 	@Override
 	public void attack() {
-		System.out.println("파이리에게 부여된 미션 회수는 " + mission +"회입니다." );
+		
 		if (HP >= 50) { 
 			System.out.println("파이리가 불을 뿜습니다. 화르륵==33");
 			HP -= 30;
